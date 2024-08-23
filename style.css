@@ -1,0 +1,124 @@
+/* Ensure the page covers the full screen */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    background: transparent; /* Remove any default background */
+}
+
+/* Full-screen background image */
+body {
+    background-image: url('static-background.jpg'); /* Background image */
+    background-size: cover; /* Make sure the image covers the whole screen */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Ensure the image doesn't repeat */
+    background-attachment: fixed; /* Fixed background while scrolling */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Nav bar styling */
+nav {
+    padding: 15px;
+    position: fixed; /* Fixes the nav to the top */
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: flex-start; /* Align menu items to the left */
+    background: transparent; /* No background color */
+    backdrop-filter: blur(10px); /* Optional: adds a blur effect */
+}
+
+/* Menu styling */
+.menu {
+    display: flex; /* Display menu items in a row */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    margin: 0 10px; /* Space between menu items */
+}
+
+.menu li a {
+    display: block;
+    padding: 10px 15px; /* Padding inside menu items */
+    color: white; /* Text color */
+    text-decoration: none;
+    font-size: 18px;
+    transition: background 0.3s ease;
+}
+
+.menu li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Light hover effect */
+}
+
+/* Section styling */
+section {
+    padding: 20px; /* Padding inside each section */
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for readability */
+    box-sizing: border-box; /* Ensure padding doesn't affect layout */
+    margin-top: 70px; /* Space below the fixed nav bar */
+}
+
+/* Contact buttons styles */
+.contact-buttons {
+    position: fixed; /* Fixes the contact buttons to the bottom */
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    z-index: 1000;
+    display: flex;
+    gap: 10px; /* Space between buttons */
+}
+
+.contact-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent; /* No background color */
+    border: none; /* No border */
+    padding: 10px; /* Padding around icons */
+    border-radius: 50%; /* Round shape */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Optional: shadow effect */
+    transition: transform 0.3s ease;
+}
+
+.contact-button:hover {
+    transform: scale(1.1); /* Slightly enlarge button on hover */
+}
+
+.contact-icon {
+    width: 40px; /* Size of the icons */
+    height: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
